@@ -31,21 +31,33 @@ class UI {
 
   static addBookToList(book) {
     const books_list = document.getElementById('books_list');
-    books_list.innerHTML += `
+    const row = document.createElement('div')
+    row.innerHTML += `
     <h3>${book.title}</h3>
     <h3>${book.author}</h3>
-    <button type="submit" class= "delete">Remove</button>
+   <button type="submit" class= "delete">Remove</button>
     <hr>
     `;
+    books_list.appendChild(row)
   }
 
   static deleteBook(el) {
     // function for deleting objects
     if (el.classList.contains('delete')) {
       el.parentElement.remove();
+      // el.index.localStorage.removeItem()
     }
   }
+
+
+
+
 }
+
+// function remove() {
+//   const filtered = greetings.filter(item => item !== 'Hello');
+//   localStorage.removeItem("info", JSON.stringify(filtered));
+//  }
 
 // clear the input field
 function clearInput() {
@@ -76,4 +88,8 @@ document.querySelector('.books_list').addEventListener('click', (e) => {
   // for calling remove button
 
   UI.deleteBook(e.target);
+  UI.removeBook(index);
 });
+
+
+
