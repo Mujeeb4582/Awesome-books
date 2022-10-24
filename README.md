@@ -42,9 +42,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-  GitHub: [@Mujeeb4582](https://github.com/Mujeeb4582)
+- Twitter: [@Mujeebu93992980](https://twitter.com/Mujeebu93992980)
+- LinkedIn: [mujeeb-ur-rahman-54268011a](https://linkedin.com/in/mujeeb-ur-rahman-54268011a)
 
 👤 **Author2**
 
@@ -64,9 +64,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Code Reviewer(s) for the insightful feedback.
+- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
+- Hat tip to anyone whose code was used.
 
 ## 📝 License
 
