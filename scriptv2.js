@@ -1,4 +1,17 @@
 const booksList = []; // Declear array for storing the bookList
+const body = document.querySelector('body');
+const retrieveData = localStorage.getItem('info');
+
+// load the body on browser refresh and pre-fill the browser
+body.onload = () => {
+  if (retrieveData) {
+    const previousData = JSON.parse(retrieveData);
+    for (let i = 0; i < previousData.length; i++) {
+      // loop for retriveve data from array
+      UI.addBookToList(previousData[i]);
+    }
+  }
+};
 
 class BookInfo {
   // create the object using constructor method
@@ -21,9 +34,16 @@ class UI {
     books_list.innerHTML += `
     <h3>${book.title}</h3>
     <h3>${book.author}</h3>
-    <button type="submit">Remove</button>
+    <button type="submit" class= "delete">Remove</button>
     <hr>
     `;
+  }
+
+  static deleteBook(el) {
+    // function for deleting objects
+    if (el.classList.contains('delete')) {
+      el.parentElement.remove();
+    }
   }
 }
 
@@ -46,5 +66,14 @@ document.querySelector('.bookInfo').addEventListener('submit', (e) => {
   console.log(booksList);
 
   UI.addBookToList(book); // call the function for display the objects on the browser
+
+  localStorage.setItem('info', JSON.stringify(booksList));
+
   clearInput(); // function call of clearing the input field
+});
+
+document.querySelector('.books_list').addEventListener('click', (e) => {
+  // for calling remove button
+
+  UI.deleteBook(e.target);
 });
