@@ -7,10 +7,9 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
+- Major languages(HTML, JAVASCRIPT & CSS)
+- Frameworks(NONE)
+- Technologies used(GIT, GITHUB, VSCODE)
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
@@ -46,12 +45,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@Mujeebu93992980](https://twitter.com/Mujeebu93992980)
 - LinkedIn: [mujeeb-ur-rahman-54268011a](https://linkedin.com/in/mujeeb-ur-rahman-54268011a)
 
-👤 **Author2**
+👤 **Ibrahim Suhail Al-Yousefi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@cluab](https://github.com/Cluab)
+- Twitter: [@cluab122](https://twitter.com/cluab122)
+- LinkedIn: [Ebrahim Al-Yousefi](https://linkedin.com/in/Ebrahim Al-Yousefi)
+- Instagram: [@27.i.b](https://www.instagram.com/27.i.b/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
