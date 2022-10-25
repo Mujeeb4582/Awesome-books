@@ -77,6 +77,5 @@ addBookForm.addEventListener('submit', (event) => {
 
   localStorage.setItem('list', JSON.stringify(booksList));
 
-  // createListItem(bookName,bookAuthorName);
   createListItem(book);
 });
