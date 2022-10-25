@@ -25,11 +25,11 @@ function createListItem(item, booksListIndex) {
 
   // remove button click listner
   removeBtn.addEventListener('click', (event) => {
-    // Remove li from DOM
+    // Remove item from DOM
     event.target.parentElement.remove();
-    // Remove Li from booksList Array
+    // Remove item from booksList Array
     booksList.splice(booksListIndex, 1);
-    // Remove from localStorage
+    // Remove iem from localStorage
     localStorage.setItem('list', JSON.stringify(booksList));
   });
 }
