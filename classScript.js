@@ -32,7 +32,7 @@ class BookInfo {
     unOrderList.appendChild(li1);
     unOrderList.appendChild(li3);
     unOrderList.appendChild(li2);
-    unOrderList.appendChild(removeBtn);
+    listWrapper.appendChild(removeBtn);
 
     // remove button click listner
     removeBtn.addEventListener('click', (event) => {
