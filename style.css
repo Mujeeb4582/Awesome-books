@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: wheat;
+  background-color: #87ceeb;
 }
 
 .heading {
@@ -62,22 +62,47 @@ button {
   border-radius: 4px;
   background-color: blanchedalmond;
   border: solid green;
+  box-shadow: 4px 2px #000;
+}
+
+.addBtn:hover{
+  background-color: green;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .listWrapper {
   display: flex;
   justify-content: space-between;
   width: 450px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 4px 8px;
 }
+
+.listWrapper:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.listWrapper:nth-child(even) {
+  background-color: #fff;
+}
+
 
 .listWrapper button {
   padding: 4px 8px;
   font-size: 14px;
   border-radius: 4px;
-  background-color: blanchedalmond;
-  border: solid red;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  box-shadow: 4px 2px #800;
+  cursor: pointer;
+}
+
+.listWrapper button:hover {
+  background-color: #f08080;
+  color: #000;
+  transform: scale(1.1);
 }
 
 .books {
