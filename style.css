@@ -8,6 +8,7 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
 }
+
 body {
   background-color: wheat;
 }
@@ -26,23 +27,24 @@ body {
 .newBook {
   margin-bottom: 16px;
   padding-top: 20px;
-  border-top: 1px solid ;
+  border-top: 1px solid;
 }
 
 .bookInfo {
   display: flex;
   flex-direction: column;
-align-items: flex-end;
-gap: 0px;
-
+  align-items: flex-end;
+  gap: 0;
 }
+
 .bookInfo input {
   margin: 0;
 }
+
 button {
   border: none;
-
 }
+
 .title,
 .author {
   margin-bottom: 8px;
@@ -61,12 +63,12 @@ button {
   background-color: blanchedalmond;
   border: solid green;
 }
+
 .listWrapper {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   width: 450px;
   border: 1px solid black;
-  padding: 4px 8px;
   padding: 4px 8px;
 }
 
@@ -77,12 +79,14 @@ button {
   background-color: blanchedalmond;
   border: solid red;
 }
+
 .books {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .books_list {
   display: flex;
   justify-content: center;
@@ -90,21 +94,14 @@ button {
   align-items: center;
   border-radius: 4px;
   border: 1px solid black;
-  width:450px;
+  width: 450px;
   justify-items: center;
-  
 }
 
 .books_list ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  gap:4px;
+  gap: 4px;
   padding-top: 5px;
 }
-
-
-
-
-
-
