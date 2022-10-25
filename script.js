@@ -1,4 +1,4 @@
-var booksList = []; // Declear array for storing the bookList
+let booksList = []; // Declare array for storing the bookList
 
 const addBookForm = document.querySelector('#bookInfo');
 
@@ -24,7 +24,7 @@ function createListItem(item, booksListIndex) {
   unOrderList.appendChild(horzintalLine);
 
   // remove button click listner
-  removeBtn.addEventListener('click', function (event) {
+  removeBtn.addEventListener('click', (event) => {
     // Remove li from DOM
     event.target.parentElement.remove();
     // Remove Li from booksList Array
@@ -36,7 +36,7 @@ function createListItem(item, booksListIndex) {
 
 // Loop over Array, create the element and append to the DOM
 function renderBookList(lists) {
-  lists.forEach(function (element, index) {
+  lists.forEach((element, index) => {
     createListItem(element, index);
   });
 }
@@ -51,7 +51,7 @@ if (storedBookList) {
   renderBookList(booksList);
 }
 
-addBookForm.addEventListener('submit', function (event) {
+addBookForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   // Access input tag values
