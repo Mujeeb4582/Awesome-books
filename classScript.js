@@ -22,7 +22,6 @@ class BookInfo {
     const removeBtn = document.createElement('button');
     removeBtn.innerHTML = 'Remove';
     removeBtn.type = 'button';
-    const horzintalLine = document.createElement('hr');
 
     list.appendChild(listWrapper);
     listWrapper.appendChild(unOrderList);
@@ -34,7 +33,6 @@ class BookInfo {
     unOrderList.appendChild(li3);
     unOrderList.appendChild(li2);
     unOrderList.appendChild(removeBtn);
-    unOrderList.appendChild(horzintalLine);
 
     // remove button click listner
     removeBtn.addEventListener('click', (event) => {

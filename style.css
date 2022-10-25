@@ -38,4 +38,19 @@
   border: solid green;
 }
 
+.addBtn {
+  font-size: 14px;
+  padding: 4px 12px;
+  float: right;
+  margin-right: 42%;
+}
+
+.books_list {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 
