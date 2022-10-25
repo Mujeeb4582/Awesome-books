@@ -1,32 +1,91 @@
-const booksList = [];
+var booksList = []; // Declear array for storing the bookList
 
-class BookInfo {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
+const addBookForm = document.querySelector('#bookInfo');
+
+const list = document.querySelector('.books_list');
+
+// function for creating and display the list on the browser
+function createListItem(item, booksListIndex) {
+  const unOrderList = document.createElement('div');
+  const li1 = document.createElement("h3");
+  const li2 = document.createElement("h3");
+  const removeBtn = document.createElement("button");
+  removeBtn.innerHTML = "Remove";
+  removeBtn.type = "button";  
+  const horzintalLine = document.createElement('hr');
+
+  list.appendChild(unOrderList);
+  // set innerHTML value
+  li1.innerHTML = item.title;
+  li2.innerHTML = item.author;
+  unOrderList.appendChild(li1);
+  unOrderList.appendChild(li2);
+  unOrderList.appendChild(removeBtn);
+  unOrderList.appendChild(horzintalLine);
+
+
+  // remove button click listner
+  removeBtn.addEventListener("click", function(event) {
+    // Remove li from DOM
+    event.target.parentElement.remove();
+    // Remove Li from booksList Array
+    booksList.splice(booksListIndex, 1);
+    // Remove from localStorage
+    localStorage.setItem('list', JSON.stringify(booksList));
+  })
+}
+
+// Loop over Array, create the element and append to the DOM
+function renderBookList(lists) {
+  lists.forEach(function(element, index) {
+    createListItem(element, index);
+  });
+}
+
+
+// check is booksList exist in localStorage
+const storedBookList = localStorage.getItem('list');
+// //if Exist
+if (storedBookList) {
+  // JSON.parse booksList
+  const previousList = JSON.parse(storedBookList);
+  booksList = previousList;
+  renderBookList(booksList);
+}
+
+
+
+addBookForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Access input tag values
+  const bookName = addBookForm.bookTitle.value;
+  const bookAuthorName = addBookForm.bookAuthor.value;
+
+  // console.log(addBookForm.bookTitle.value);
+  // console.log(addBookForm.bookAuthor.value);
+  // push in array
+  class BookInfo {
+    // create the object using constructor method
+    constructor(title, author) {
+      this.title = title;
+      this.author = author;
+    }
   }
-}
 
-function Add(title, author){
-  const book = new BookInfo(title, author);
+  const book = new BookInfo(bookName, bookAuthorName);
+
+  // Add object to the array
   booksList.push(book);
-}
+
+  // clear the input field on browser
+  addBookForm.bookTitle.value = "";
+  addBookForm.bookAuthor.value = "";
+
+  localStorage.setItem('list', JSON.stringify(booksList));
+
+  // createListItem(bookName,bookAuthorName);
+  createListItem(book);
+})
 
 
-const books_list = document.getElementById('books_list');
-const bookTitle = document.querySelector('#title');
-const bookAuthor = document.querySelectorAll('#author');
-console.log(bookTitle);
-console.log(bookAuthor);
-function addtion () {
-  // const books = booksList[];
-  Add(bookTitle, bookAuthor);
-  books_list.innerHTML += `
-  <h3>Title ${bookTitle}</h3>
-  <h3>Auther ${bookAuthor}</h3>
-  <button type="submit">Remove</button>
-  <hr>
-  `;
-}
-
-console.log(booksList);
