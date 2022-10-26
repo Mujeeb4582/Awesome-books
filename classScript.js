@@ -37,6 +37,16 @@ function showcontact() {
 }
 // showList();
 // make object instance and its methods
+document.getElementById('add').addEventListener('click', () => {
+  showAdd();
+});
+document.getElementById('lis').addEventListener('click', () => {
+  showList();
+});
+document.getElementById('con').addEventListener('click', () => {
+  showcontact();
+});
+
 class BookInfo {
   // create the object using constructor method
   constructor(title, author) {
