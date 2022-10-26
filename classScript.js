@@ -9,6 +9,7 @@ ondate();
 // grab all elements
 const addBookForm = document.querySelector('#bookInfo');
 const list = document.querySelector('.books_list');
+const msg = document.querySelector('.message');
 
 // nav section start here
 
@@ -86,7 +87,7 @@ class BookInfo {
     list.appendChild(listWrapper);
     listWrapper.appendChild(unOrderList);
     // set innerHTML value
-    li1.innerHTML = this.title;
+    li1.innerHTML = `'${this.title}'`;
     li2.innerHTML = this.author;
     li3.innerHTML = 'by';
     unOrderList.appendChild(li1);
@@ -102,6 +103,11 @@ class BookInfo {
       booksList.splice(booksListIndex, 1);
       // Remove iem from localStorage
       localStorage.setItem('list', JSON.stringify(booksList));
+      if (booksList.length === 0) {
+        msg.style.display = 'block';
+      } else {
+        msg.style.display = 'none';
+      }
     });
   }
 }
@@ -124,9 +130,18 @@ if (storedBookList) {
   renderBookList(booksList);
 }
 
+const success = document.querySelector('.success');
 // form part
 addBookForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  // Message display when book added successfully
+  success.innerHTML = 'Book added successfully!';
+  success.style.opacity = 1;
+  // Timer for removing message after some time
+  setTimeout(() => {
+    success.style.opacity = 0;
+  }, 1000);
 
   // Access input tag values
   const bookName = addBookForm.bookTitle.value;
@@ -143,4 +158,9 @@ addBookForm.addEventListener('submit', (event) => {
   addBookForm.bookAuthor.value = '';
   // localstorage
   localStorage.setItem('list', JSON.stringify(booksList));
+  if (booksList.length === 0) {
+    msg.style.display = 'block';
+  } else {
+    msg.style.display = 'none';
+  }
 });
