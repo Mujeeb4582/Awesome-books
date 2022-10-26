@@ -11,21 +11,27 @@ function showAdddeff() {
   document.getElementById('list-section').setAttribute('class', 'non-show');
   document.getElementById('add-section').setAttribute('class', 'show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
+  document.getElementById('books').setAttribute('class', 'books');
+  document.getElementById('heading').setAttribute('class', 'heading');
 }
 showAdddeff()
 function showList() {
   document.getElementById('list-section').setAttribute('class', 'show');
   document.getElementById('add-section').setAttribute('class', 'non-show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
+  document.getElementById('books').setAttribute('class', 'books');
+  document.getElementById('heading').setAttribute('class', 'heading');
 }
 function showAdd() {
   document.getElementById('list-section').setAttribute('class', 'non-show');
   document.getElementById('add-section').setAttribute('class', 'show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
+  document.getElementById('books').setAttribute('class', 'books');
+  document.getElementById('heading').setAttribute('class', 'heading');
 }
 function showcontact() {
-  document.getElementById('list-section').setAttribute('class', 'non-show');
-  document.getElementById('add-section').setAttribute('class', 'non-show');
+  // document.getElementById('list-section').setAttribute('class', 'non-show');
+  document.getElementById('books').setAttribute('class', 'non-show');
   document.getElementById('heading').setAttribute('class', 'non-show');
   document.getElementById('contact-section').setAttribute('class', 'show');
 }

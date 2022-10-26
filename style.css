@@ -69,14 +69,14 @@ body {
   font-size: 40px;
 }
 
-.bookInfo {
+#bookInfo {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 0;
 }
 
-.bookInfo input {
+#bookInfo input {
   margin: 0;
 }
 
@@ -113,7 +113,7 @@ button {
 .listWrapper {
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  width: 50vw;
   padding: 4px 8px;
 }
 
@@ -147,7 +147,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80hv;
+  height: 50vh;
+  gap: 20px;
 }
 
 .books_list {
@@ -157,7 +158,7 @@ button {
   align-items: center;
   border-radius: 4px;
   border: 1px solid black;
-  width: 450px;
+  width: 50vw;
   justify-items: center;
 }
 
