@@ -14,7 +14,7 @@ function showAdddeff() {
   document.getElementById('books').setAttribute('class', 'books');
   document.getElementById('heading').setAttribute('class', 'heading');
 }
-showAdddeff()
+showAdddeff();
 function showList() {
   document.getElementById('list-section').setAttribute('class', 'show');
   document.getElementById('add-section').setAttribute('class', 'non-show');
