@@ -155,7 +155,8 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid green;
+  border: 3px solid green;
+  border-radius: 5px;
   justify-items: center;
 }
 
