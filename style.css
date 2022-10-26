@@ -46,6 +46,12 @@ body {
   color: green;
 }
 
+.date {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 .heading {
   text-align: center;
   margin-top: 20px;
@@ -60,7 +66,7 @@ body {
 .newBook {
   margin-bottom: 16px;
   padding-top: 20px;
-  border-top: 1px solid;
+  font-size: 40px;
 }
 
 .bookInfo {
@@ -141,6 +147,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80hv;
 }
 
 .books_list {
@@ -162,6 +169,28 @@ button {
   padding-top: 5px;
 }
 
+.contact-section {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-section h2 {
+  font-size: 40px;
+}
+
+.contact-section p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-section ul {
+  font-size: 20px;
+}
+
 .footerWrapper {
   position: fixed;
   bottom: 0;
@@ -172,9 +201,18 @@ footer {
   border: 3px solid green;
   border-radius: 8px;
   margin: 0 16px;
+  height: 10%;
 }
 
 .footerText {
   padding: 6px 16px;
   font-size: 14px;
+}
+
+.show {
+  display: contents;
+}
+
+.non-show {
+  display: none;
 }

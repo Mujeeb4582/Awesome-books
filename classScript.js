@@ -1,9 +1,35 @@
 let booksList = []; // Declare a array for storing the bookList
 
+function ondate() {
+  document.querySelector('.date').innerHTML = Date();
+}
+ondate();
 // grab all elements
 const addBookForm = document.querySelector('#bookInfo');
 const list = document.querySelector('.books_list');
-
+function showAdddeff() {
+  document.getElementById('list-section').setAttribute('class', 'non-show');
+  document.getElementById('add-section').setAttribute('class', 'show');
+  document.getElementById('contact-section').setAttribute('class', 'non-show');
+}
+showAdddeff()
+function showList() {
+  document.getElementById('list-section').setAttribute('class', 'show');
+  document.getElementById('add-section').setAttribute('class', 'non-show');
+  document.getElementById('contact-section').setAttribute('class', 'non-show');
+}
+function showAdd() {
+  document.getElementById('list-section').setAttribute('class', 'non-show');
+  document.getElementById('add-section').setAttribute('class', 'show');
+  document.getElementById('contact-section').setAttribute('class', 'non-show');
+}
+function showcontact() {
+  document.getElementById('list-section').setAttribute('class', 'non-show');
+  document.getElementById('add-section').setAttribute('class', 'non-show');
+  document.getElementById('heading').setAttribute('class', 'non-show');
+  document.getElementById('contact-section').setAttribute('class', 'show');
+}
+// showList();
 // make object instance and its methods
 class BookInfo {
   // create the object using constructor method

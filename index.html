@@ -12,18 +12,20 @@
       <br />
       <nav class="navBar">
         <h3 class="navHeading">Awesome Books</h3>
+
         <ul class="navList">
-          <li>List</li>
-          <li>Add new</li>
-          <li>Contact</li>
+          <li onclick="showList()">List</li>
+          <li onclick="showAdd()">Add new</li>
+          <li onclick="showcontact()">Contact</li>
         </ul>
       </nav>
-      <h1 class="heading">All awesome books</h1>
+      <p class="date"></p>
+      <h1 id="heading"class="heading">All awesome books</h1>
     </header>
     <section class="books">
-      <div class="books_list" id="books_list"></div>
+      <div id="list-section"><div class="books_list" id="books_list"></div></div>
       <br />
-
+      <div id="add-section">
       <div class="formWrapper">
         <h3 class="newBook">Add a new book</h3>
       </div>
@@ -41,9 +43,22 @@
           placeholder="Author"
           required /><br />
         <button type="submit" class="addBtn">Add</button>
-      </form>
+      </form></div>
     </section>
-
+<section id="contact-section" >
+  <div class="contact-section" >
+  <h2>Contact information</h2>
+  <div>
+  <p>Do have any questions or you just want to say "Hello"? </p>
+  <p>You can reach out to us</p>
+  </div>
+  <ul>
+    <li>Our e-mail: mail@mail.com</li>
+  <li>Our phone number: 0043586534422</li>
+  <li>Our address: Streetname 22, 84503 City,Country</li>
+</ul>
+</div>
+</section>
     <div class="footerWrapper">
       <footer>
         <p class="footerText">Copyright &nbsp; &nbsp; &nbsp; &nbsp; ...<p>
