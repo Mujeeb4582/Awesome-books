@@ -8,32 +8,64 @@
     <title>Awesome Book</title>
   </head>
   <body>
-    <header>
-      <h1>Awesome Books</h1>
+    <header class="header">
       <br />
-    </header>
-    <section class="books">
-      <div class="books_list" id="books_list"></div>
-      <br />
+      <nav class="navBar">
+        <h3 class="navHeading">Awesome Books</h3>
 
+        <ul class="navList">
+          <li  id="lis">List</li>
+          <li  id="add">Add new</li>
+          <li  id="con">Contact</li>
+        </ul>
+      </nav>
+      <p class="date"></p>
+      <h1 id="heading"class="heading">All awesome books</h1>
+    </header>
+    <section class="books" id="books">
+      <div id="list-section"><div class="books_list" id="books_list"></div></div>
+      <br />
+      <div id="add-section">
+      <div class="formWrapper">
+        <h3 class="newBook">Add a new book</h3>
+      </div>
       <form class="bookInfo" id="bookInfo">
         <input
           class="title"
           name="bookTitle"
           type="text"
           placeholder="Title"
-          required /><br /><br />
+          required /><br />
         <input
           class="author"
           name="bookAuthor"
           type="text"
           placeholder="Author"
-          required /><br /><br />
-        <button type="submit">Add</button>
-      </form>
+          required /><br />
+        <button type="submit" class="addBtn">Add</button>
+      </form></div>
     </section>
+<section id="contact-section" >
+  <div class="contact-section" >
+  <h2>Contact information</h2>
+  <div>
+  <p>Do have any questions or you just want to say "Hello"? </p>
+  <p>You can reach out to us</p>
+  </div>
+  <ul>
+    <li>Our e-mail: mail@mail.com</li>
+  <li>Our phone number: 0043586534422</li>
+  <li>Our address: Streetname 22, 84503 City,Country</li>
+</ul>
+</div>
+</section>
+    <div class="footerWrapper">
+      <footer>
+        <p class="footerText">Copyright &nbsp; &nbsp; &nbsp; &nbsp; ...<p>
+        </footer>
+      </div>
 
-    <!-- <script src="./scriptv2.js"></script> -->
-    <script src="./script.js"></script>
+      
+    <script src="./classScript.js"></script>
   </body>
 </html>
