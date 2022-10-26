@@ -11,6 +11,14 @@ const addBookForm = document.querySelector('#bookInfo');
 const list = document.querySelector('.books_list');
 const msg = document.querySelector('.message');
 
+function emptyMessage() {
+  if (booksList.length === 0) {
+    msg.style.display = 'block';
+  } else {
+    msg.style.display = 'none';
+  }
+}
+
 // nav section start here
 
 function showAdddeff() {
@@ -103,17 +111,14 @@ class BookInfo {
       booksList.splice(booksListIndex, 1);
       // Remove iem from localStorage
       localStorage.setItem('list', JSON.stringify(booksList));
-      if (booksList.length === 0) {
-        msg.style.display = 'block';
-      } else {
-        msg.style.display = 'none';
-      }
+      emptyMessage();
     });
   }
 }
 
 // Loop over Array, create the element and append to the DOM
 function renderBookList(lists) {
+  emptyMessage();
   lists.forEach((element, index) => {
     const book = new BookInfo(element.title, element.author);
     book.createListItem(element, index);
@@ -158,9 +163,5 @@ addBookForm.addEventListener('submit', (event) => {
   addBookForm.bookAuthor.value = '';
   // localstorage
   localStorage.setItem('list', JSON.stringify(booksList));
-  if (booksList.length === 0) {
-    msg.style.display = 'block';
-  } else {
-    msg.style.display = 'none';
-  }
+  emptyMessage();
 });

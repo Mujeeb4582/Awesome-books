@@ -6,11 +6,13 @@
 
 ## Browser Display
 
-![screenshot](./images/awesome_books_list.jpeg)
+![screenshot](./images/empty-awesome_books_list.jpeg)
 
-![screenshot](./images/awesome_books_add.jpeg)
+![screenshot](./images/awesome_books_list.png)
 
-![screenshot](./images/awesome_books_contact.jpeg)
+![screenshot](./images/awesome_books_add.png)
+
+![screenshot](./images/contact_awesome_books.jpeg)
 
 
 ## Built With
