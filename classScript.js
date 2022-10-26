@@ -3,40 +3,55 @@ let booksList = []; // Declare a array for storing the bookList
 function ondate() {
   document.querySelector('.date').innerHTML = Date();
 }
+
 ondate();
+
 // grab all elements
 const addBookForm = document.querySelector('#bookInfo');
 const list = document.querySelector('.books_list');
+
+// nav section start here
+
 function showAdddeff() {
   document.getElementById('list-section').setAttribute('class', 'non-show');
   document.getElementById('add-section').setAttribute('class', 'show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
   document.getElementById('books').setAttribute('class', 'books');
-  document.getElementById('heading').setAttribute('class', 'heading');
+  document.getElementById('heading').setAttribute('class', 'non-show');
+  document.getElementById('add').style.color = 'green';
 }
+
 showAdddeff();
+
 function showList() {
   document.getElementById('list-section').setAttribute('class', 'show');
   document.getElementById('add-section').setAttribute('class', 'non-show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
   document.getElementById('books').setAttribute('class', 'books');
   document.getElementById('heading').setAttribute('class', 'heading');
+  document.getElementById('add').style.color = 'black';
+  document.getElementById('lis').style.color = 'green';
+  document.getElementById('con').style.color = 'black';
 }
 function showAdd() {
+  document.getElementById('add').style.color = 'green';
+  document.getElementById('lis').style.color = 'black';
+  document.getElementById('con').style.color = 'black';
   document.getElementById('list-section').setAttribute('class', 'non-show');
   document.getElementById('add-section').setAttribute('class', 'show');
   document.getElementById('contact-section').setAttribute('class', 'non-show');
   document.getElementById('books').setAttribute('class', 'books');
-  document.getElementById('heading').setAttribute('class', 'heading');
+  document.getElementById('heading').setAttribute('class', 'non-show');
 }
 function showcontact() {
-  // document.getElementById('list-section').setAttribute('class', 'non-show');
   document.getElementById('books').setAttribute('class', 'non-show');
   document.getElementById('heading').setAttribute('class', 'non-show');
   document.getElementById('contact-section').setAttribute('class', 'show');
+  document.getElementById('add').style.color = 'black';
+  document.getElementById('lis').style.color = 'black';
+  document.getElementById('con').style.color = 'green';
 }
-// showList();
-// make object instance and its methods
+
 document.getElementById('add').addEventListener('click', () => {
   showAdd();
 });
@@ -47,6 +62,9 @@ document.getElementById('con').addEventListener('click', () => {
   showcontact();
 });
 
+// nav section ends here
+
+// make object instance and its methods
 class BookInfo {
   // create the object using constructor method
   constructor(title, author) {
