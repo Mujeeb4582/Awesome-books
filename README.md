@@ -1,8 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> Description the project.
+> In this project, we built a basic website that allows users to add or remove books from a list. By designing this website, we learned different concepts of JavaScript such as Class, objects, array, local storage, and DOM manipulation.  
+
+## Browser Display
+
+![screenshot](./images/awesome_books_list.jpeg)
+
+![screenshot](./images/awesome_books_add.jpeg)
+
+![screenshot](./images/awesome_books_contact.jpeg)
 
 
 ## Built With
@@ -10,9 +18,10 @@
 - Major languages(HTML, JAVASCRIPT & CSS)
 - Frameworks(NONE)
 - Technologies used(GIT, GITHUB, VSCODE)
+
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://mujeeb4582.github.io/Awesome-books/)
 
 
 ## Getting Started
@@ -24,12 +33,27 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Browser
+- git
+- code editor
 
 ### Setup
+To get a local copy up and running follow these simple example steps.
 
-### Install
+- Clone the repository using:
+```
+    git clone git@github.com:Qoosim/Awesome-Books.git 
+```
+- Navigate to the Awesome-Books with this command 
+```
+    cd Awesome-Books
+```
+
+- Install Visual Studio extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Usage
+- Open in browser
+- Add and remove books
 
 ### Run tests
 
@@ -39,7 +63,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Mujeeb ur Rahman**
 
 -  GitHub: [@Mujeeb4582](https://github.com/Mujeeb4582)
 - Twitter: [@Mujeebu93992980](https://twitter.com/Mujeebu93992980)
