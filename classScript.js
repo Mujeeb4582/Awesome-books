@@ -156,7 +156,7 @@ addBookForm.addEventListener('submit', (event) => {
   // clear the input field on browser
   addBookForm.bookTitle.value = '';
   addBookForm.bookAuthor.value = '';
-  // localstorage
+  // localStorage
   localStorage.setItem('list', JSON.stringify(booksList));
   emptyMessage();
 });
