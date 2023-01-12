@@ -1,10 +1,10 @@
 let booksList = []; // Declare a array for storing the bookList
 
-function ondate() {
+function onDate() {
   document.querySelector('.date').innerHTML = Date();
 }
 
-ondate();
+onDate();
 
 // grab all elements
 const addBookForm = document.querySelector('#bookInfo');
@@ -21,54 +21,71 @@ function emptyMessage() {
 
 // nav section start here
 
-function showAdddeff() {
-  document.getElementById('list-section').setAttribute('class', 'non-show');
-  document.getElementById('add-section').setAttribute('class', 'show');
-  document.getElementById('contact-section').setAttribute('class', 'non-show');
-  document.getElementById('books').setAttribute('class', 'books');
-  document.getElementById('heading').setAttribute('class', 'non-show');
-  document.getElementById('add').style.color = 'green';
+function navItemColor(book, list, contact) {
+  document.getElementById('addBook').style.color = book;
+  document.getElementById('bookList').style.color = list;
+  document.getElementById('contact').style.color = contact;
 }
 
-showAdddeff();
+function navItemAttribute(list, add, contact, books, heading) {
+  document.getElementById('list-section').setAttribute('class', list);
+  document.getElementById('add-section').setAttribute('class', add);
+  document.getElementById('contact-section').setAttribute('class', contact);
+  document.getElementById('books').setAttribute('class', books);
+  document.getElementById('heading').setAttribute('class', heading);
+}
+
+// navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
+
+function showAddBook() {
+  navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
+  // document.getElementById('list-section').setAttribute('class', 'non-show');
+  // document.getElementById('add-section').setAttribute('class', 'show');
+  // document.getElementById('contact-section').setAttribute('class', 'non-show');
+  // document.getElementById('books').setAttribute('class', 'books');
+  // document.getElementById('heading').setAttribute('class', 'non-show');
+  document.getElementById('addBook').style.color = 'green';
+}
+
+showAddBook();
+
+// navItemAttribute('show', 'non-show', 'non-show', 'books', 'heading');
 
 function showList() {
-  document.getElementById('list-section').setAttribute('class', 'show');
-  document.getElementById('add-section').setAttribute('class', 'non-show');
-  document.getElementById('contact-section').setAttribute('class', 'non-show');
-  document.getElementById('books').setAttribute('class', 'books');
-  document.getElementById('heading').setAttribute('class', 'heading');
-  document.getElementById('add').style.color = 'black';
-  document.getElementById('lis').style.color = 'green';
-  document.getElementById('con').style.color = 'black';
-}
-function showAdd() {
-  document.getElementById('add').style.color = 'green';
-  document.getElementById('lis').style.color = 'black';
-  document.getElementById('con').style.color = 'black';
-  document.getElementById('list-section').setAttribute('class', 'non-show');
-  document.getElementById('add-section').setAttribute('class', 'show');
-  document.getElementById('contact-section').setAttribute('class', 'non-show');
-  document.getElementById('books').setAttribute('class', 'books');
-  document.getElementById('heading').setAttribute('class', 'non-show');
-}
-function showcontact() {
-  document.getElementById('books').setAttribute('class', 'non-show');
-  document.getElementById('heading').setAttribute('class', 'non-show');
-  document.getElementById('contact-section').setAttribute('class', 'show');
-  document.getElementById('add').style.color = 'black';
-  document.getElementById('lis').style.color = 'black';
-  document.getElementById('con').style.color = 'green';
+  navItemAttribute('show', 'non-show', 'non-show', 'books', 'heading');
+  // document.getElementById('list-section').setAttribute('class', 'show');
+  // document.getElementById('add-section').setAttribute('class', 'non-show');
+  // document.getElementById('contact-section').setAttribute('class', 'non-show');
+  // document.getElementById('books').setAttribute('class', 'books');
+  // document.getElementById('heading').setAttribute('class', 'heading');
+  navItemColor('black', 'green', 'black');
 }
 
-document.getElementById('add').addEventListener('click', () => {
+function showAdd() {
+  navItemColor('green', 'black', 'black');
+  navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
+  // document.getElementById('list-section').setAttribute('class', 'non-show');
+  // document.getElementById('add-section').setAttribute('class', 'show');
+  // document.getElementById('contact-section').setAttribute('class', 'non-show');
+  // document.getElementById('books').setAttribute('class', 'books');
+  // document.getElementById('heading').setAttribute('class', 'non-show');
+}
+function showContact() {
+  navItemAttribute('non-show', 'non-show', 'show', 'non-show', 'non-show');
+  // document.getElementById('books').setAttribute('class', 'non-show');
+  // document.getElementById('heading').setAttribute('class', 'non-show');
+  // document.getElementById('contact-section').setAttribute('class', 'show');
+  navItemColor('black', 'black', 'green');
+}
+
+document.getElementById('addBook').addEventListener('click', () => {
   showAdd();
 });
-document.getElementById('lis').addEventListener('click', () => {
+document.getElementById('bookList').addEventListener('click', () => {
   showList();
 });
-document.getElementById('con').addEventListener('click', () => {
-  showcontact();
+document.getElementById('contact').addEventListener('click', () => {
+  showContact();
 });
 
 // nav section ends here
@@ -103,7 +120,7 @@ class BookInfo {
     unOrderList.appendChild(li2);
     listWrapper.appendChild(removeBtn);
 
-    // remove button click listner
+    // remove button click listener
     removeBtn.addEventListener('click', (event) => {
     // Remove item from DOM
       event.target.parentElement.remove();
