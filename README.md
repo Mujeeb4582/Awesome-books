@@ -2,18 +2,13 @@
 
 # Awesome Books
 
-> In this project, we built a basic website that allows users to add or remove books from a list. By designing this website, we learned different concepts of JavaScript such as Class, objects, array, local storage, and DOM manipulation.  
+In this project, we built a basic website that allows users to add or remove books from a list. By designing this website, we learned different concepts of JavaScript such as Class, objects, array, local storage, and DOM manipulation.  
 
 ## Browser Display
-
-![screenshot](./images/empty-awesome_books_list.jpeg)
-
-![screenshot](./images/awesome_books_list.png)
-
-![screenshot](./images/awesome_books_add.png)
-
-![screenshot](./images/contact_awesome_books.jpeg)
-
+![screencapture-127-0-0-1-5500-index-html-2023-01-12-22_14_41](https://user-images.githubusercontent.com/109666020/212135791-609b5faf-deba-416d-8451-75f2eb417170.png)
+![screencapture-127-0-0-1-5500-index-html-2023-01-12-22_17_05](https://user-images.githubusercontent.com/109666020/212136077-0fb58181-4118-4b51-a3b7-874bb820aa6a.png)
+![screencapture-127-0-0-1-5500-index-html-2023-01-12-22_11_21](https://user-images.githubusercontent.com/109666020/212136209-4c96b6c6-538a-4cee-b57f-a5ed44233f2b.png)
+![screencapture-127-0-0-1-5500-index-html-2023-01-12-22_17_46](https://user-images.githubusercontent.com/109666020/212136847-f62d81de-f3e4-4b78-8407-2ce1c4c7a11a.png)
 
 ## Built With
 
