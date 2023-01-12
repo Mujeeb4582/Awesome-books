@@ -35,46 +35,24 @@ function navItemAttribute(list, add, contact, books, heading) {
   document.getElementById('heading').setAttribute('class', heading);
 }
 
-// navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
-
 function showAddBook() {
   navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
-  // document.getElementById('list-section').setAttribute('class', 'non-show');
-  // document.getElementById('add-section').setAttribute('class', 'show');
-  // document.getElementById('contact-section').setAttribute('class', 'non-show');
-  // document.getElementById('books').setAttribute('class', 'books');
-  // document.getElementById('heading').setAttribute('class', 'non-show');
   document.getElementById('addBook').style.color = 'green';
 }
 
 showAddBook();
 
-// navItemAttribute('show', 'non-show', 'non-show', 'books', 'heading');
-
 function showList() {
   navItemAttribute('show', 'non-show', 'non-show', 'books', 'heading');
-  // document.getElementById('list-section').setAttribute('class', 'show');
-  // document.getElementById('add-section').setAttribute('class', 'non-show');
-  // document.getElementById('contact-section').setAttribute('class', 'non-show');
-  // document.getElementById('books').setAttribute('class', 'books');
-  // document.getElementById('heading').setAttribute('class', 'heading');
   navItemColor('black', 'green', 'black');
 }
 
 function showAdd() {
   navItemColor('green', 'black', 'black');
   navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
-  // document.getElementById('list-section').setAttribute('class', 'non-show');
-  // document.getElementById('add-section').setAttribute('class', 'show');
-  // document.getElementById('contact-section').setAttribute('class', 'non-show');
-  // document.getElementById('books').setAttribute('class', 'books');
-  // document.getElementById('heading').setAttribute('class', 'non-show');
 }
 function showContact() {
   navItemAttribute('non-show', 'non-show', 'show', 'non-show', 'non-show');
-  // document.getElementById('books').setAttribute('class', 'non-show');
-  // document.getElementById('heading').setAttribute('class', 'non-show');
-  // document.getElementById('contact-section').setAttribute('class', 'show');
   navItemColor('black', 'black', 'green');
 }
 
