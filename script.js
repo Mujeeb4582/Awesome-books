@@ -12,7 +12,7 @@ function createListItem(item, booksListIndex) {
   const removeBtn = document.createElement('button');
   removeBtn.innerHTML = 'Remove';
   removeBtn.type = 'button';
-  const horzintalLine = document.createElement('hr');
+  const horizontalLine = document.createElement('hr');
 
   list.appendChild(unOrderList);
   // set innerHTML value
@@ -21,9 +21,9 @@ function createListItem(item, booksListIndex) {
   unOrderList.appendChild(li1);
   unOrderList.appendChild(li2);
   unOrderList.appendChild(removeBtn);
-  unOrderList.appendChild(horzintalLine);
+  unOrderList.appendChild(horizontalLine);
 
-  // remove button click listner
+  // remove button click listener
   removeBtn.addEventListener('click', (event) => {
     // Remove item from DOM
     event.target.parentElement.remove();
