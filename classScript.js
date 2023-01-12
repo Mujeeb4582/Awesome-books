@@ -37,7 +37,7 @@ function navItemAttribute(list, add, contact, books, heading) {
 
 function showAddBook() {
   navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
-  document.getElementById('addBook').style.color = 'green';
+  document.getElementById('addBook').style.color = '#daaa63';
 }
 
 showAddBook();
