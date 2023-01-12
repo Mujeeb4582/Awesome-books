@@ -44,16 +44,16 @@ showAddBook();
 
 function showList() {
   navItemAttribute('show', 'non-show', 'non-show', 'books', 'heading');
-  navItemColor('black', 'green', 'black');
+  navItemColor('black', '#daaa63', 'black');
 }
 
 function showAdd() {
-  navItemColor('green', 'black', 'black');
+  navItemColor('#daaa63', 'black', 'black');
   navItemAttribute('non-show', 'show', 'non-show', 'books', 'non-show');
 }
 function showContact() {
   navItemAttribute('non-show', 'non-show', 'show', 'non-show', 'non-show');
-  navItemColor('black', 'black', 'green');
+  navItemColor('black', 'black', '#daaa63');
 }
 
 document.getElementById('addBook').addEventListener('click', () => {
